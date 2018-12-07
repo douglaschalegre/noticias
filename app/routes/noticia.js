@@ -3,10 +3,12 @@ module.exports = function(app){
     app.get('/noticia', function(req,res){
 
         var con = app.config.dbConnection();
+        var noticiasModel = app.app.models.noticiasModel;
 
-        con.query('select * from noticias where id_noticia = 1',function(error, result){
+        noticiasModel.getNoticias(con, function(error, result){
             res.render('noticias/noticia', {noticia: result});
         });
+        
     });
     
 };
