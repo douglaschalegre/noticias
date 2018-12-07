@@ -1,25 +1,126 @@
-<!DOCTYPE html>
-	<html lang="pt-br">
-		<head>
-			<meta charset="utf-8"/>
-			<title>Noticias</title>
-		</head>
-	<body>
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Notícias NodeJS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
 
-		<h1>Noticia</h1>
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href=""></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/noticias">Noticias</a></li>
+							<li><a href="/inclusao_noticia" class="button primary"><span class="icon fa-user-circle-o" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+					</nav>
+				</header>
 
-		<table>
-			<tr>
-				<td>ID</td>
-				<td>Titulo</td>
-			</tr>
-			<% for(var i=0; i < noticias.length; i++){ %>
-			<tr>
-				<td><%= noticias[i].id_noticia %></td>
-				<td><%= noticias[i].titulo %></td>
-			</tr>
-		 	<% } %>
-		</table>
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Listagem de notícias</h2>
+						</header>
+
+						<!-- Table -->
+							<section>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>ID</th>
+												<th>Título</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+                                            <% for(var i=0; i < noticias.length; i++){ %>
+                                                <tr>
+                                                    <td><%= noticias[i].id_noticia %></td>
+													<td><%= noticias[i].titulo %></td>
+													<td>
+														<a><span class="icon fa-pencil-square-o"></span></a>
+														<a><span class="icon fa-trash"></span></a>
+													</td>
+                                                </tr>
+                                            <% } %>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>ID</th>
+												<th>Notícia</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<% for(var i=0; i < noticias.length; i++){ %>
+											<tr>
+												<td><%= noticias[i].id_noticia %></td>
+												<td><%= noticias[i].titulo %></td>
+												<td>
+														<a><span class="icon fa-pencil-square-o"></span></a>
+														<a><span class="icon fa-trash"></span></a>
+												</td>
+											</tr>
+											<% } %>
+										</tbody>
+									</table>
+								</div>
+							</section>
+				
+						</div>
+						<!-- GitHub Alert -->
+						<section id="five" class="wrapper style2 special fade">
+								<div class="container">
+									<header>
+										<h2>Todo o código desse projeto é open-source e se encontra no github</h2>
+										<p><a href="https://github.com/douglaschalegre" class="icon alt fa-github-square" style="color:aliceblue"><span class="label"></span> douglaschalegre</a></p>
+									</header>
+								</div>
+							</section>
+			
+						<!-- Footer -->
+							<footer id="footer">
+								<ul class="icons">
+									<li><a href="https://twitter.com/dougchalegre" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/douglas.chalegre" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.linkedin.com/in/douglas-chalegre-147263160/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://instagram.com/dougchalegre" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/douglaschalegre" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:douglas.chalegre@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+								<ul class="copyright">
+									<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</footer>
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

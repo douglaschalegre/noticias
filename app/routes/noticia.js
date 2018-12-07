@@ -5,7 +5,7 @@ module.exports = function(app){
         var con = app.config.dbConnection();
         var noticiasModel = app.app.models.noticiasModel;
 
-        noticiasModel.getNoticias(con, function(error, result){
+        noticiasModel.getNoticia(con, function(error, result){
             res.render('noticias/noticia', {noticia: result});
         });
         

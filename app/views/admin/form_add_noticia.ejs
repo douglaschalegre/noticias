@@ -1,23 +1,98 @@
-<!DOCTYPE html>
-	<html lang="pt-br">
-		<head>
-			<meta charset="utf-8"/>
-			<title>Formulario de cadastro de Noticia</title>
-		</head>
-	<body>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Formulario de cadastro de Noticia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-		<h1>Adicionar noticia</h1>
-		<br/>
+		<div id="page-wrapper">
 
-		<form action="/noticias/salvar" method="POST">
-			<label>Titulo</label>
-			<input type="text" id="titulo" name="titulo" placeholder="Titulo da noticia"/>
-			<br/>
-			<label>Noticia</label>
-			<textarea id="noticia" name="noticia" rows="5" cols="30"></textarea>
-			<br/>
-			<input type="submit" value="Enviar"/>
-		</form>
+			<!-- Header -->
+			<header id="header">
+					<h1 id="logo"><a href=""></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/noticias">Noticias</a></li>
+							<li><a href="/inclusao_noticia" class="button primary"><span class="icon fa-user-circle-o" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+				
+					<div class="container">
+						<header class="major">
+							<h2>Adicionar noticia</h2>
+						</header>
+
+						<!-- Form -->
+							<section>
+								<h3>Formulário</h3>
+								<form method="POST" action="/noticias/salvar">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" id="titulo" name="titulo" placeholder="Titulo da noticia"/>
+										</div>
+
+										<div class="col-12">
+											<textarea id="noticia" name="noticia" rows="6" placeholder="Conteúdo da notícia"></textarea>
+										</div>
+
+										<div class="col-12">
+											<input type="submit" value="Enviar" class="primary" />
+										</div>
+
+									</div>
+								</form>
+							</section>
+					</div>
+				</div>
+
+			<!-- GitHub Alert -->
+						<section id="five" class="wrapper style2 special fade">
+								<div class="container">
+									<header>
+										<h2>Todo o código desse projeto é open-source e se encontra no github</h2>
+										<p><a href="https://github.com/douglaschalegre" class="icon alt fa-github-square" style="color:aliceblue"><span class="label"></span> douglaschalegre</a></p>
+									</header>
+								</div>
+							</section>
+			
+						<!-- Footer -->
+							<footer id="footer">
+								<ul class="icons">
+									<li><a href="https://twitter.com/dougchalegre" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/douglas.chalegre" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.linkedin.com/in/douglas-chalegre-147263160/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://instagram.com/dougchalegre" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/douglaschalegre" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:douglas.chalegre@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+								<ul class="copyright">
+									<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</footer>
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
